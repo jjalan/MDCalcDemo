@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_oobe"
+        style="@style/OOBEActivity"
+        tools:context="com.yoaccess.mdcalcdemo.ui.OOBEActivity">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:gravity="center"
+                  android:layout_above="@+id/activity_oobe_copyright_text">
+
+        <ImageView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/logo"
+                   android:layout_marginBottom="48dp"/>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:gravity="center"
+                      android:weightSum="1">
+
+            <LinearLayout android:layout_width="0dp"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="0.65"
+                          android:orientation="vertical"
+                          android:gravity="center">
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:textColor="@color/colorPrimary"
+                          android:textStyle="bold"
+                          android:text="Register in &lt; 1 minute to:"
+                          android:layout_marginBottom="16dp"/>
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:textColor="@color/colorPrimary"
+                          android:layout_gravity="left"
+                          android:text="\u2022 Save your favorite calculators"
+                          android:layout_marginBottom="4dp"/>
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_gravity="left"
+                          android:textColor="@color/colorPrimary"
+                          android:text="\u2022 Track recent searches"
+                          android:layout_marginBottom="4dp"/>
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_gravity="left"
+                          android:textColor="@color/colorPrimary"
+                          android:text="\u2022 Access expert/creator content"
+                          android:layout_marginBottom="32dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/signup_button_background"
+                android:textAlignment="center"
+                android:layout_marginBottom="16dp"
+                android:textColor="@android:color/white"
+                android:text="REGISTER FOR FREE"
+                android:onClick="onSignupButtonClicked"/>
+
+        <Button android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="LOG IN"
+                android:textColor="@color/colorPrimary"
+                android:background="@drawable/login_button_background"
+                android:textAlignment="center"
+                android:onClick="onLoginButtonClicked"/>
+    </LinearLayout>
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="\u00A9 MD AWARE 2016. ALL RIGHTS RESERVED. PATENT PENDING."
+              android:layout_alignParentBottom="true"
+              android:textAlignment="center"
+              android:textStyle="bold"
+              android:layout_marginTop="16dp"
+              android:id="@id/activity_oobe_copyright_text"/>
+
+</RelativeLayout>
