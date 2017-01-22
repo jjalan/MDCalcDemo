@@ -13,13 +13,9 @@ android {
     }
     buildTypes {
         debug{
-            //resValue "string", "user_signup_url", "http://localhost:3000/api/auth/signup"
-            //resValue "string", "user_authenticate_url", "http://localhost:3000/api/auth/authenticate"
-            //resValue "string", "user_profile_url", "http://localhost:3000/api/auth/user/me"
-
-            resValue "string", "user_signup_url", "http://playground.trysquad.com/api/auth/signup"
-            resValue "string", "user_authenticate_url", "http://playground.trysquad.com/api/auth/authenticate"
-            resValue "string", "user_profile_url", "http://playground.trysquad.com/api/auth/user/me"
+            resValue "string", "user_signup_url", "http://localhost:3000/api/auth/signup"
+            resValue "string", "user_authenticate_url", "http://localhost:3000/api/auth/authenticate"
+            resValue "string", "user_profile_url", "http://localhost:3000/api/auth/user/me"
         }
         release {
             resValue "string", "user_signup_url", "http://playground.trysquad.com/api/auth/signup"
